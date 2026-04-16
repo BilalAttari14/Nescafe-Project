@@ -1,0 +1,152 @@
+.dm-sans-regular {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body,
+html {
+  position: relative;
+  height: 100%;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: transparent;
+  font-family: "DM sans", sans-serif;
+  padding: 20px 0 0 20px;
+  font-size: 20px;
+}
+.nescafe_logo {
+  width: 200px;
+  padding-bottom: 20px;
+}
+.subdiv1 {
+  display: flex;
+  align-items: flex-end;
+}
+.link {
+  margin-left: 8vw;
+}
+.anc {
+  text-decoration: none;
+  color: #ffffffc3;
+  letter-spacing: 0.5px;
+  margin-left: 25px;
+  padding-bottom: 10px;
+  background-image: linear-gradient(to right, #af1317, #af1317);
+  background-size: 0% 3px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s;
+}
+.anc:hover {
+  background-size: 100% 3px;
+}
+.locationBtn {
+  background-color: #af1317;
+  color: #fff;
+  border: none;
+  border-radius: 10px 0 30px 0;
+  padding: 15px;
+  margin-left: 5vw;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.locationBtn:hover {
+  background-color: #fff;
+  color: #000000;
+  border-radius: 30px 0 10px 0;
+  transition: 1s;
+}
+.sec1 {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+    url(./assets/homeimg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+.home-head {
+  font-family: "DM sans";
+  font-size: 4rem;
+  margin-bottom: 20px;
+  transform: translateY(100px);
+  opacity: 0;
+  animation: slideUp 1.5s ease forwards;
+  letter-spacing: 5px;
+}
+.home-para {
+  font-family: "DM sans";
+  font-size: 1.8rem;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  color: #ffffffc3;
+  transform: translateY(150px);
+  opacity: 0;
+  animation: slideUp 2s ease forwards;
+}
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.box {
+  margin-top: 100px;
+  transform: translate(-50%,-50%);
+}
+
+.box span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.box span:nth-child(1) {
+  animation-delay: -0.2s;
+}
+.box span:nth-child(2) {
+  animation-delay: -0.4s;
+}
+.box span:nth-child(3) {
+  animation-delay: -0.1s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}

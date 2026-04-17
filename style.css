@@ -9,7 +9,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body,
@@ -113,7 +113,7 @@ nav {
 }
 .box {
   margin-top: 100px;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .box span {
@@ -149,4 +149,70 @@ nav {
     opacity: 0;
     transform: rotate(45deg) translate(20px, 20px);
   }
+}
+.sec2 {
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  padding: 50px 100px;
+}
+.ourStory,
+.ourRecipes {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px 0 20px 0;
+  padding: 100px 40px;
+  margin: 20px;
+  color: #fff;
+}
+.ourStory {
+  background:
+    linear-gradient(#000000c2, #0000004c),
+    url(./assets/img3.jpg) no-repeat;
+  background-size: 800px;
+  background-position: 10%;
+  background-attachment: fixed;
+  padding: 100px 70px;
+}
+.ourRecipes {
+  background:
+    linear-gradient(#0000003b, #000000c2),
+    url(./assets/img5.jpg) no-repeat;
+  background-size: 800px;
+  background-position: 85%;
+  background-attachment: fixed;
+}
+.ourStory h2,
+.ourRecipes h2 {
+  font-size: 3rem;
+  transform: translateY(150px);
+  opacity: 0;
+  animation: slideUp 1s ease-out forwards;
+}
+.ourStory p,
+.ourRecipes p {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  transform: translateY(200px);
+  opacity: 0;
+  animation: slideUp 1.5s ease-out forwards;
+}
+.readMoreBtn {
+  margin-top: 3rem;
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 0 0 20px 0;
+  transition: 0.5s;
+  transform: translateY(150px);
+  opacity: 0;
+  animation: slideUp 2s ease-out forwards;
+}
+.readMoreBtn:hover {
+  background-color: #fff;
+  color: #000;
+  border-radius: 20px 0 0 0;
 }

@@ -87,7 +87,7 @@ nav {
   text-align: center;
 }
 .home-head {
-  font-family: "DM sans";
+  font-family: "DM sans" , sans-serif;
   font-size: 4rem;
   margin-bottom: 20px;
   transform: translateY(100px);
@@ -96,7 +96,7 @@ nav {
   letter-spacing: 5px;
 }
 .home-para {
-  font-family: "DM sans";
+  font-family: "DM sans" , sans-serif;
   font-size: 1.8rem;
   font-weight: 200;
   letter-spacing: 0.5px;
@@ -154,7 +154,8 @@ nav {
   height: 100vh;
   display: flex;
   text-align: center;
-  padding: 50px 100px;
+  padding: 6rem 100px;
+  font-family: 'DM sans' , sans-serif;
 }
 .ourStory,
 .ourRecipes {
@@ -163,7 +164,7 @@ nav {
   flex-direction: column;
   align-items: center;
   border-radius: 30px 0 20px 0;
-  padding: 100px 40px;
+  padding: 6.4rem 2.5rem;
   margin: 20px;
   color: #fff;
 }
@@ -174,27 +175,30 @@ nav {
   background-size: 800px;
   background-position: 10%;
   background-attachment: fixed;
-  padding: 100px 70px;
+  padding: 6.4rem 4.5rem;
 }
 .ourRecipes {
   background:
-    linear-gradient(#0000003b, #000000c2),
-    url(./assets/img5.jpg) no-repeat;
+  linear-gradient(#0000003b, #000000c2),
+  url(./assets/img5.jpg) no-repeat;
   background-size: 800px;
   background-position: 85%;
   background-attachment: fixed;
 }
 .ourStory h2,
 .ourRecipes h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   transform: translateY(150px);
   opacity: 0;
   animation: slideUp 1s ease-out forwards;
+  color: #ffffffdb;
 }
 .ourStory p,
 .ourRecipes p {
   margin-top: 5px;
   font-size: 1.5rem;
+  font-weight: 10;
+  color: #ffffffdb;
   transform: translateY(200px);
   opacity: 0;
   animation: slideUp 1.5s ease-out forwards;
@@ -215,4 +219,11 @@ nav {
   background-color: #fff;
   color: #000;
   border-radius: 20px 0 0 0;
+}
+.sec3{
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.3) ,rgba(0,0,0,0.3) ),url(./assets/img13.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 1.6rem 0 0 0;
 }
